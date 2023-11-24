@@ -1,21 +1,17 @@
-* {
-  text-align: center;
-}
-
 body {
   font-family: "Roboto Mono", monospace;
-  min-height: 400px;
-  background-image: url("https://i.postimg.cc/TPRTBfRg/Design-sem-nome-1.png");
-  background-color: #111;
-  background-size: 100%;
-  background-position: center;
+  text-align: center;
+  background-image: url("https://i.postimg.cc/cCW2KWP7/conceito-de-pensamento-desenhado-mao-23-2148150715.jpg");
+  background-color: #000000;
+  background-size: cover;
+  background-position: center top;
   background-repeat: no-repeat;
+  height: 100vh;
 }
 
 .container {
   text-align: center;
   padding: 20px;
-  height: 100vh;
 }
 
 .page-title {
@@ -39,45 +35,10 @@ body {
   right: 10px;
 }
 
-table {
-  border: 2px solid white;
-  border-collapse: collapse;
+body > img {
+  margin: 0 10px;
 }
 
-h1 {
-  color: white;
-}
-
-th,
-tr,
-td {
-  border: solid 1px white;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-button {
-  background-color: #00ff7f;
-  color: #000;
-  padding: 10px;
-  border-radius: 10px;
-  text-transform: uppercase;
-  border: none;
-  margin: 5px;
-  font-weight: bold;
-}
-
-button:hover {
-  background-color: #000;
-  color: #00ff7f;
-}
-
-input {
-  border: none;
-  height: 30px;
-  border-radius: 10px;
-}
-
-table img {
-  max-width: 50px;
+img {
+  max-height: 350px;
 }
