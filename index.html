@@ -2,12 +2,14 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - _Aluraflix2  - Projeto Andrieli</title>
+  <title>CodePen - _Tabela de classificação de Game</title>
   <link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
+<link rel="stylesheet" href="style.css">
+
 <html>
 
 <head>
@@ -19,24 +21,43 @@
 <body>
   <div class="container">
     <h1 class="page-title">
-      Aluraflix
+      Pontuação do Game
     </h1>
     <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo" alt="">
     <p class="page-subtitle">
-      Qual seu filme favorito?
+      Crie seu Personagem:
     </p>
-    <div class="form-wrapper">
-      <input type="text" id="filme" name="filme" placeholder="Insira endereço de imagem">
-      <button onClick="adicionarFilme()">Adicionar Filme</button>
-    </div>
-  </div>
-  <div id="listaFilmes"></div>
-  <a href="https://alura.com.br/" target="_blank">
-    <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
-  </a>
+
+    <input type="text" id="nome" placeholder="Crie nome do personagem">
+    <input type="text" id="imagem" placeholder="Insira link para imagem do Avatar">
+    <button onClick="adicionarPersonagem()">Adicionar Personagem</button>
+
+    <table style="width:100%">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Avatar</th>
+          <th>Vitórias</th>
+          <th>Empates</th>
+          <th>Derrotas</th>
+          <th>Vidas</th>
+          <th>Mortes</th>
+          <th colspan="3">Resultado da Partida</th>
+          <th>Remover</th>
+        </tr>
+      </thead>
+
+      <tbody id="tabelaJogadores">
+
+      </tbody>
+    </table>
+
+    <button onClick="apagarLista()">Apagar Lista</button>
+
 </body>
 
 </html>
+<script type="text/javascript" src="script.js" defer></script>
 <!-- partial -->
   <script  src="./script.js"></script>
 
